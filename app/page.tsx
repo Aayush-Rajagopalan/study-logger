@@ -29,7 +29,7 @@ export default async function Home() {
     <div>
       <Navbar userId={userId}/>
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-4">
-        {subjects.map((subject) => (
+        {subjects.map((subject:any) => (
           <SubjectCard key={subject.id} id={subject.id} subject={subject.name} />
         ))}
       </div>
